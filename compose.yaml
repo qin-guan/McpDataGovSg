@@ -1,0 +1,7 @@
+﻿services:
+  mcpdatagovsg:
+    image: mcpdatagovsg
+    build:
+      context: .
+      dockerfile: McpDataGovSg/Dockerfile
+
