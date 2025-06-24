@@ -1,0 +1,14 @@
+{
+  "inputs": [],
+  "servers": {
+    "McpDataGovSg": {
+      "type": "stdio",
+      "command": "dotnet",
+      "args": [
+        "run",
+        "--project",
+        "McpDataGovSg/McpDataGovSg.csproj",
+      ]
+    }
+  }
+}

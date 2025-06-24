@@ -5,16 +5,26 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <EnableSdkContainerSupport>true</EnableSdkContainerSupport>
+        <ContainerRepository>qin-guan/McpDataGovSg</ContainerRepository>
+        <ContainerFamily>alpine</ContainerFamily>
+        <RuntimeIdentifiers>linux-x64;linux-arm64</RuntimeIdentifiers>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.4"/>
+        <PackageReference Include="Lifti.Core" Version="6.4.0" />
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.6"/>
+        <PackageReference Include="ModelContextProtocol.AspNetCore" Version="0.2.0-preview.3"/>
+        <PackageReference Include="NeoSmart.Caching.Sqlite.AspNetCore" Version="9.0.1"/>
+        <PackageReference Include="ZiggyCreatures.FusionCache" Version="2.3.0"/>
+        <PackageReference Include="ZiggyCreatures.FusionCache.OpenTelemetry" Version="2.3.0"/>
+        <PackageReference Include="ZiggyCreatures.FusionCache.Serialization.CysharpMemoryPack" Version="2.3.0"/>
     </ItemGroup>
 
     <ItemGroup>
-      <Content Include="..\.dockerignore">
-        <Link>.dockerignore</Link>
-      </Content>
+        <Content Include="..\.dockerignore">
+            <Link>.dockerignore</Link>
+        </Content>
     </ItemGroup>
 
 </Project>
