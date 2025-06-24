@@ -45,6 +45,5 @@ await using (var scope = app.Services.CreateAsyncScope())
 app.UseHttpsRedirection();
 
 app.MapOpenApi();
-app.MapMcp();
 
 app.Run();
