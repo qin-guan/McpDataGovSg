@@ -29,7 +29,7 @@ builder.Services.AddSingleton<DgsSearchService>();
 
 builder.Services
     .AddMcpServer()
-    .WithHttpTransport()
+    .WithStdioServerTransport()
     .WithTools<DatasetQueryTool>();
 
 builder.Services.AddOpenApi();

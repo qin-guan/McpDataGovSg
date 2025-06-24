@@ -1,7 +1,17 @@
 {
   "inputs": [],
   "servers": {
-    "McpDataGovSg": {
+    "ProdMcpDataGovSg": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/qin-guan/mcpdatagovsg"
+      ],
+      "env": {}
+    },
+    "DevMcpDataGovSg": {
       "type": "stdio",
       "command": "dotnet",
       "args": [
